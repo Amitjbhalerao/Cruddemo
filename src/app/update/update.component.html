@@ -1,0 +1,30 @@
+<div class="container">
+  <form [formGroup]="myForm" (ngSubmit)="onSubmitForm()">
+    <div class="form-group">
+      <label for="name">Name: </label>
+      <input type="text" class="form-control" formControlName="name" required />
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input type="number" class="form-control" formControlName="age" />
+    </div>
+
+    <div class="form-group">
+      <label for="empID">empID:</label>
+      <input type="number" class="form-control" formControlName="empId" />
+    </div>
+
+    <div class="form-group">
+      <label for="branch">branch:</label>
+      <input type="text" class="form-control" formControlName="branch" />
+    </div>
+
+    <div class="form-group">
+      <label for="role">Role: </label>
+      <input type="text" class="form-control" formControlName="role" />
+    </div>
+    <br /><br />
+    <button class="btn btn-info">Submit</button>
+  </form>
+</div>

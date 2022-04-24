@@ -1,0 +1,35 @@
+<p>form works!</p>
+<p>update works!</p>
+<div class="container">
+  <form [formGroup]="myForm" (ngSubmit)="onSubmitForm()">
+    <div class="form-group">
+      <label>Name: </label>
+      <input type="text" class="form-control" formControlName="name" required />
+    </div>
+
+    <div class="form-group">
+      <label>Age:</label>
+      <input type="number" class="form-control" formControlName="age" />
+    </div>
+
+    <div class="form-group">
+      <label>empID:</label>
+      <input type="number" class="form-control" formControlName="empId" />
+    </div>
+
+    <div class="form-group">
+      <label>branch:</label>
+      <input type="text" class="form-control" formControlName="branch" />
+    </div>
+
+    <div class="form-group">
+      <label>Role: </label>
+      <input type="text" class="form-control" formControlName="role" />
+    </div>
+    <br /><br />
+    <!-- {{count | cust}} -->
+    <!-- [disabled]="myForm.invalid" -->
+    <button class="btn btn-info">Submit</button>
+    <button class="btn btn-link" (click)="backlog()">Back loging</button>
+  </form>
+</div>

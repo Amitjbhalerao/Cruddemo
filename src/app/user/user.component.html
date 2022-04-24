@@ -1,0 +1,23 @@
+<div class="container">
+  <table class="table table-stripped">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Emp Id</th>
+      <th>Branch</th>
+      <th>Role</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr *ngFor="let dt of empData">
+      <td>{{ dt.id }}</td>
+
+      <td>{{ dt.name }}</td>
+      <td>{{ dt.age }}</td>
+      <td>{{ dt.empId }}</td>
+      <td>{{ dt.branch }}</td>
+      <td>{{ dt.role }}</td>
+    </tr>
+  </table>
+</div>

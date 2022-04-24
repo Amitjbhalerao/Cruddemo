@@ -1,0 +1,23 @@
+<p>login works!</p>
+
+<div class="container">
+  <form [formGroup]="myForm" (ngSubmit)="onSubmitForm()">
+    <div class="form-group">
+      <label for="name">Name: </label>
+      <input type="text" class="form-control" formControlName="name" required />
+    </div>
+    <div class="form-group">
+      <label for="Password">Password:-</label>
+      <input type="number" class="form-control" formControlName="empId" />
+    </div>
+    <br />
+    <br />
+    <button class="btn btn-info">Submit</button>
+  </form>
+</div>
+
+<div>
+  <button class="btn btn-link" (click)="register()" routerLink="form">
+    Register your self
+  </button>
+</div>

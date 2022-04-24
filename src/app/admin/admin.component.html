@@ -1,0 +1,49 @@
+<div class="container">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand">Bashboard</a>
+      </div>
+    </div>
+  </nav>
+  <table class="table table-stripped">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Emp Id</th>
+      <th>Branch</th>
+      <th>Role</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr *ngFor="let dt of empData">
+      <td>{{ dt.id }}</td>
+
+      <td>{{ dt.name }}</td>
+      <td>{{ dt.age }}</td>
+      <td>{{ dt.empId }}</td>
+      <td>{{ dt.branch }}</td>
+      <td>{{ dt.role }}</td>
+      <td>
+        <button
+          (click)="onEdit(dt.id, dt)"
+          type="button"
+          class="btn btn-primary"
+        >
+          Edit
+        </button>
+      </td>
+      <td>
+        <button
+          (click)="onDelete(dt)"
+          pButton
+          type="button"
+          class="btn btn-danger"
+        >
+          Delete
+        </button>
+      </td>
+    </tr>
+  </table>
+</div>
